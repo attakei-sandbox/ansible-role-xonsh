@@ -1,0 +1,12 @@
+---
+extends: default
+
+ignore: |
+  .venv/
+
+rules:
+  new-line-at-end-of-file: disable
+  truthy:
+    allowed-values:
+      - 'yes'
+      - 'no'
