@@ -1,3 +1,4 @@
 ---
 # defaults file for attakei.xonsh
+xonsh__pip_args: ''
 xonsh__xontribs: []
