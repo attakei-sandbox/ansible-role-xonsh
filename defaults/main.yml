@@ -1,2 +1,3 @@
 ---
 # defaults file for attakei.xonsh
+xonsh__xontribs: []

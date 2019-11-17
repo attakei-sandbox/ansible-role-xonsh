@@ -5,3 +5,10 @@
     name: xonsh
     state: present
     extra_args: '{{ xonsh__pip_args }}'
+- name: Fetch path of xonsh
+  shell: which xonsh
+  register: _which_xonsh
+  changed_when: no
+- set_fact:
+    _xonsh__path: '{{ _which_xonsh.stdout }}'
+- include_tasks: xontrib.yml
