@@ -1,5 +1,7 @@
+---
 name: Lint files
 
+# yamllint disable-line rule:truthy
 on:
   - push
 

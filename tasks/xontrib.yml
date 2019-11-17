@@ -6,7 +6,8 @@
 - set_fact:
     _xonsh__xontribs: '{{ res.stdout_lines|parse_xontribs }}'
 - set_fact:
-    _xonsh__xontribs_not_installed: '{{ _xonsh__xontribs|xontrib_not_installed }}'
+    _xonsh__xontribs_not_installed: |
+      '{{ _xonsh__xontribs|xontrib_not_installed }}'
 - name: Install xontrib
   shell: '{{ _xonsh__path }} -c "xpip install {{ item }}"'
   when: item in _xonsh__xontribs_not_installed
