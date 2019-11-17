@@ -1,0 +1,16 @@
+galaxy_info:
+  author: Kazuya Takei
+  description: Installation and configuration Xonsh
+
+  issue_tracker_url: https://github.com/attakei/ansible-role-xonsh/issues
+
+  min_ansible_version: 2.7
+
+  platforms:
+    - name: Arch
+
+  galaxy_tags:
+    - python
+    - shell
+
+dependencies: []
