@@ -1,0 +1,7 @@
+---
+# tasks file for attakei.xonsh
+- name: Install xonsh
+  pip:
+    name: xonsh
+    state: present
+    extra_args: '{{ xonsh__pip_args }}'
