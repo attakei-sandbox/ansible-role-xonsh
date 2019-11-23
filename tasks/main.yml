@@ -11,4 +11,5 @@
   changed_when: no
 - set_fact:
     _xonsh__path: '{{ _which_xonsh.stdout }}'
-- include_tasks: xontrib.yml
+# TODO: Fix listing xontribs
+# - include_tasks: xontrib.yml
